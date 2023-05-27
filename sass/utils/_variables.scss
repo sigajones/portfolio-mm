@@ -1,0 +1,31 @@
+// Couleur
+$font-color: #0D0D0D;
+$main-color: #D9A918;
+$main-color-light: lighten($main-color,10%);
+$main-color-lighter: lighten($main-color,20%);
+$second-color: #A66D05;
+$second-color-light: lighten($second-color,10%);
+$second-color-lighter: lighten($second-color,20%);
+
+
+
+// Font-size
+
+$h1-font-size: 2rem; // 32px
+$h2-font-size: 1.5rem; // 24px
+$h3-font-size: 1.25rem; // 20px
+$h4-font-size: 1.125rem; // 18x
+$p-font-size: 0.938rem; // 15px
+$p-1-font-size: 0.813rem; // 13px
+$p-2-font-size: 0.75rem; // 12px
+
+// Font weight
+$font-medium: 500;
+$font-semi-bold: 600;
+$font-bold: 700;
+$font-black: 900;
+
+// z-index
+$z-tooltip: 10;
+$z-fixed: 100;
+$z-modal: 1000;

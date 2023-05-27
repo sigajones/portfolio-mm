@@ -1,0 +1,114 @@
+.container {
+    max-width: 768px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.header {
+    background-color: $main-color;
+    width: 100%;
+    // .header reste fixe meme lorsqu'on fait défiler la page
+    position:fixed;
+    // .header est en bas(bottom) et à gauche(left) de son conteneur parent (body)
+    bottom: 0;
+    left: 0;
+    // position de .header sur l'axe z (pour la superposition)
+    z-index: $z-fixed;
+}
+
+.nav {
+    max-width: 968px;
+    height: 3rem; // 48px
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .logo, .nav-toggle {
+        font-weight: $font-bold;
+    }
+    
+    .logo:hover {
+        color: $second-color-lighter;
+    }
+
+    .nav-toggle {
+        font-size: 1.1rem;
+        cursor: pointer; //définit le type de curseur qui sera affiché lorsque l'utilisateur survolera l'élément .nav-toggle
+    }
+
+    .nav-toggle:hover {
+        color: $second-color-lighter;
+    }
+
+    .nav-list{
+        //* indique que la grille aura 3 colonnes de taille égale. La valeur 1fr signifie que chaque colonne doit occuper une fraction égale de l'espace disponible. Dans ce cas, les colonnes auront toutes la même largeur et occuperont un tiers de l'espace disponible.
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .nav-link{
+        font-size: $p-1-font-size;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link:hover{
+        color: $main-color-lighter;
+    }
+
+    .nav-icon{
+        font-size: 1.2rem;
+    }
+
+    .nav-close{
+        font-size: 1.5;
+        position: absolute;
+        right: 1.3rem;
+        bottom: .5rem;
+        cursor: pointer;
+    }
+
+    .nav-close:hover{
+        color: $second-color-lighter;
+    }
+
+    .show-menu {
+        bottom: 0;
+        //dans le media query le bottom est à -100%
+    }
+
+    .hide-menu {
+        bottom: -100%;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .nav-menu{
+        background-color: $second-color;
+        width: 100%;
+        font-weight: $font-semi-bold;
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        padding: 2rem 1.5rem 4rem;
+
+        box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+        border-radius: 1.5rem 1.5rem 0 0;
+        transition: .5s;
+    }
+    
+}
+
+
+
+
+
+
+
