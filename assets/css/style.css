@@ -35,6 +35,14 @@ img {
   max-width: 100%;
 }
 
+.section {
+  padding: 2rem 0 4rem;
+}
+
+.btn {
+  font-weight: 600;
+}
+
 .container {
   max-width: 768px;
   margin-left: 1.5rem;
@@ -80,6 +88,7 @@ img {
   gap: 2rem;
 }
 .nav .nav-link {
+  color: #fff;
   font-size: 0.813rem;
   display: flex;
   flex-direction: column;
@@ -92,6 +101,7 @@ img {
   font-size: 1.2rem;
 }
 .nav .nav-close {
+  color: #fff;
   font-size: 1.5;
   position: absolute;
   right: 1.3rem;
@@ -110,7 +120,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .nav-menu {
-    background-color: #A66D05;
+    background-color: #0D0D0D;
     width: 100%;
     font-weight: 600;
     position: fixed;
@@ -121,4 +131,73 @@ img {
     border-radius: 1.5rem 1.5rem 0 0;
     transition: 0.5s;
   }
+}
+.home-container {
+  gap: 1rem;
+}
+.home-container .home-content {
+  grid-template-columns: 0.5fr 3fr;
+  padding-top: 3.5rem;
+  align-items: center;
+}
+.home-container .home-social {
+  display: grid;
+  grid-template-columns: max-content;
+  row-gap: 1rem;
+}
+.home-container .home-social-icon {
+  font-size: 1.25rem;
+  color: #0D0D0D;
+}
+.home-container .home-social-icon:hover {
+  color: #d88e06;
+}
+.home-container .home-blob {
+  width: 200px;
+}
+.home-container .home-data {
+  grid-column: 1/3;
+}
+.home-container .home-title {
+  font-size: 2rem;
+  margin-bottom: 2px;
+}
+.home-container .home-subtitle {
+  font-size: 1.25rem;
+  color: #A66D05;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.home-container .home-description {
+  margin-bottom: 10px;
+}
+.home-container .btn {
+  display: inline-block;
+  background-color: #A66D05;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.home-container .btn:hover {
+  background-color: #eecd69;
+}
+.home-container .btn-flex {
+  display: inline-flex;
+  align-items: center;
+}
+.home-container .scroll-button {
+  transition: 0.3s;
+}
+.home-container .scroll-button:hover {
+  transform: translateY(0.25rem);
+}
+.home-container .scroll-mouse {
+  font-size: 2rem;
+}
+.home-container .scroll-down {
+  font-size: 0.75rem;
+  color: #0D0D0D;
+  margin-right: 3px;
+}
+.home-container .scroll-arrow {
+  font-size: 1.25rem;
 }/*# sourceMappingURL=style.css.map */

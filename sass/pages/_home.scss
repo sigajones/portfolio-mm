@@ -1,0 +1,76 @@
+.home-container{
+    gap: 1rem;
+
+    .home-content{
+        grid-template-columns: .5fr 3fr;
+        padding-top: 3.5rem;
+        align-items: center;
+    }
+    .home-social{
+        display: grid;
+        grid-template-columns: max-content;
+        row-gap: 1rem;
+    }
+    .home-social-icon{
+        font-size: 1.25rem;
+        color: $font-color;
+    }
+    .home-social-icon:hover{
+        color: $second-color-light;
+    }
+    .home-blob{
+        width: 200px;
+    }
+    .home-data{
+        grid-column: 1/3;
+    }
+    .home-title{
+        font-size: $h1-font-size;
+        margin-bottom: 2px;
+    }
+    .home-subtitle{
+        font-size: $h3-font-size;
+        color: $second-color;
+        font-weight: $font-medium;
+        margin-bottom: 30px;
+    }
+    .home-description{
+        margin-bottom: 10px;
+    }
+    .btn{
+        display: inline-block;
+        background-color: $second-color;
+        padding: 1rem;
+        border-radius: .5rem;
+    }
+    .btn:hover{
+        background-color: $main-color-lighter;
+    }
+    .btn-flex{
+        display: inline-flex;
+        align-items: center;
+    }
+    .home-scroll{
+        // display: none;
+    }
+    .scroll-button{
+        // color: $second-color;
+        transition: .3s;
+    }
+    .scroll-button:hover{
+        transform: translateY(.25rem);
+    }
+    .scroll-mouse{
+        font-size: 2rem;
+    }
+    .scroll-down{
+        font-size: $p-2-font-size;
+        color: $font-color;
+        margin-right: 3px;
+    }
+    .scroll-arrow{
+        font-size: 1.25rem;
+    }
+
+
+}

@@ -52,6 +52,7 @@
     }
 
     .nav-link{
+        color: #fff;
         font-size: $p-1-font-size;
         display: flex;
         flex-direction: column;
@@ -67,6 +68,7 @@
     }
 
     .nav-close{
+        color: #fff;
         font-size: 1.5;
         position: absolute;
         right: 1.3rem;
@@ -91,7 +93,7 @@
 
 @media screen and (max-width: 767px) {
     .nav-menu{
-        background-color: $second-color;
+        background-color: $font-color;
         width: 100%;
         font-weight: $font-semi-bold;
         position: fixed;
