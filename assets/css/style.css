@@ -184,6 +184,9 @@ img {
   display: inline-flex;
   align-items: center;
 }
+.home-container .home-scroll {
+  display: none;
+}
 .home-container .scroll-button {
   transition: 0.3s;
 }
